@@ -53,9 +53,7 @@ for b in long_id:
     search_long_exit = hist_prices[0:(b+exit_period)]
     # print("b = ", b)
     # print("search_long_exit = ", search_long_exit)
-    # for loop zacina hladat od poslednej hodnoty. takze najde posledne exity ako prve
-    # a tie co mali byt ako prve budu posledne pre dany entry signal.
-    # skus ci bude hladat aj pre for c in search_long_exit.reverse()
+   
     for c in search_long_exit.__reversed__():
         # print("c =", c)
         # print("search_long_exit[c:c+5] = ", search_long_exit[(search_long_exit.index(c)):
@@ -79,9 +77,7 @@ exit_short_price = []
 for d in short_id:
     search_short_exit = hist_prices[0:(d+exit_period)]
     # print("b = ", b)
-    # print("search_long_exit = ", search_long_exit)
-    # for loop zacina hladat od poslednej hodnoty. takze najde posledne exity ako prve a tie co mali byt ako prve budu posledne pre dany entry signal.
-    # skus ci bude hladat aj pre for c in search_long_exit.reverse()
+    # print("search_long_exit = ", search_long_exit)    
     for e in search_short_exit.__reversed__():
         # print("c =", c)
         # print("search_long_exit[c:c+5] = ", search_long_exit[(search_long_exit.index(c)):(search_long_exit.index(c)+exit_period+1)])
