@@ -8,6 +8,6 @@ Topics to go through:
 - data manipulation into format suitable for calculation or other work
 - strategy testing (backtesting)
 
-<b> This bot is intended for educational purposes only. Use at your own risk. <b>
+<b> These scripts are intended for educational purposes only. Use at your own risk. <b>
   
   
