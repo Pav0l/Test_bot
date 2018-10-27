@@ -8,8 +8,8 @@ client = Client(cb_api_key, cb_api_secret)
 currency_pair = "BTC-USD"
 period = "all"
 # Entry and exit periods for trades.
-entry_period = 8
-exit_period = 5
+entry_period = 1
+exit_period = 1
 
 # Creating a list of historical data into two lists. One with prices, one with times.
 hist_data = client.get_historic_prices(currency_pair = currency_pair, period = period).get("prices")
